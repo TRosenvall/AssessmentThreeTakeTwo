@@ -30,7 +30,9 @@ class MovieListTableViewController: UITableViewController {
         cell.ratingLabel.text = "\(movie.vote_average)"
         cell.overviewLabel.text = movie.overview
         MovieController.sharedInstance.fetchPosterImage(movie: movie) { (poster) in
-            cell.posterImageView.image = poster
+            DispatchQueue.main.async {
+                cell.posterImageView.image = poster
+            }
         }
         return cell
     }
