@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="146" id="Kfp-kD-zoO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="146" id="Kfp-kD-zoO" customClass="MovieTableViewCell" customModule="AssessmentThreeTakeTwo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="146"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kfp-kD-zoO" id="Iw3-aE-cGG">
@@ -71,6 +71,12 @@
                                         <constraint firstItem="gqJ-mW-Vqm" firstAttribute="top" secondItem="Iw3-aE-cGG" secondAttribute="top" constant="10" id="kGb-eU-nP9"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="overviewLabel" destination="Nz0-W5-j5F" id="0VD-Kc-UGm"/>
+                                    <outlet property="posterImageView" destination="W3I-EE-cdb" id="g3U-Ye-eaV"/>
+                                    <outlet property="ratingLabel" destination="NvJ-03-fwb" id="6f5-ey-mbg"/>
+                                    <outlet property="titleLabel" destination="x3h-x6-KMS" id="MPm-eh-P4N"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
