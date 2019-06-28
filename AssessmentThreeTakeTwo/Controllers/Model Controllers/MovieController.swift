@@ -38,7 +38,7 @@ class MovieController {
         }.resume()
     }
     
-    static func fetchPosterImage (movie: Result, completion: @escaping (UIImage?) -> Void ) {
+    func fetchPosterImage (movie: Result, completion: @escaping (UIImage?) -> Void ) {
         guard let baseURL = URL(string: "https://image.tmdb.org/t/p/w500/") else {completion(nil);return}
         guard let path = movie.poster_path else {completion(nil);return}
         let finalURL = baseURL.appendingPathComponent(path)
